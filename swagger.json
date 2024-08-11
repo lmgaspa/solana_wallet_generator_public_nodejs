@@ -1,0 +1,67 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Solana Wallet API",
+    "description": "API for generating Solana wallets"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": ["http"],
+  "paths": {
+    "/sol_generate_wallet": {
+      "post": {
+        "tags": ["Wallet"],
+        "summary": "Generates a new Solana wallet",
+        "description": "Generates a new Solana wallet and returns the address, mnemonic phrase, private key, and seed.",
+        "responses": {
+          "200": {
+            "description": "Solana wallet successfully generated",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "solAddress": {
+                  "type": "string",
+                  "description": "Solana wallet address"
+                },
+                "solMnemonic": {
+                  "type": "string",
+                  "description": "Mnemonic phrase to recover the wallet"
+                },
+                "solPrivateKey": {
+                  "type": "string",
+                  "description": "Solana wallet private key"
+                },
+                "solSeed": {
+                  "type": "string",
+                  "description": "Seed used to generate the private key"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error generating Solana wallet",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error": {
+                  "type": "string",
+                  "description": "Error message"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "tags": [
+    {
+      "name": "Wallet",
+      "description": "Operations related to Solana wallet generation"
+    }
+  ]
+}
