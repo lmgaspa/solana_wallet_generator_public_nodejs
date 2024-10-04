@@ -4,7 +4,7 @@ This project is a simple web application that allows users to generate cryptocur
 
 ### License
 
-This project is licensed under the MIT License - see the LICENSE.mit for details.
+This project is licensed under the MIT License - see the License.mit for details.
 
 ### VISIT OUR WEBSITE FOR TEST
 
