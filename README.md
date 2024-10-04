@@ -2,6 +2,10 @@
 
 This project is a simple web application that allows users to generate cryptocurrency wallet addresses for Bitcoin and Dogecoin. It leverages JavaScript, HTML, CSS, and external libraries to facilitate address creation, QR code generation, and copying private keys to the clipboard.
 
+### License
+
+This project is licensed under the MIT License - see the LICENSE.mit for details.
+
 ### VISIT OUR WEBSITE FOR TEST
 
 https://solana-wallet-generator-public-nodejs.onrender.com
